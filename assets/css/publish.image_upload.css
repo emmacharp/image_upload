@@ -1,53 +1,19 @@
-.field-image_upload, .field-multilingual_image_upload {
-	position: relative;
-}
-
 .field-image_upload .image-ctn, .field-multilingual_image_upload .image-ctn {
-	margin-top: var(--spacing-micro);
-	border-radius: var(--radius-smallest);
-	max-width: 50rem;
-	max-height: 50rem;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
-.field-image_upload .image-upload-remove, .field-multilingual_image_upload .image-upload-remove {
-	background-color: transparent;
-	color: var(--color-main) !important;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
+.field-image_upload button, .field-multilingual_image_upload button {
+	float: right;
 }
 
-.field-image_upload .image-upload-remove:hover, .field-multilingual_image_upload .image-upload-remove:hover {
-	color: var(--color-accent) !important;
+.field-image_upload button+*:not(button), .field-multilingual_image_upload button+*:not(button) {
+	clear: right;
 }
 
-.field-image_upload .image-upload-editor img, .field-multilingual_image_upload .image-upload-editor img {
-	width: 100%;
-}
-
-.field-image_upload .image-upload-editor .croppr-overlay, .field-multilingual_image_upload .image-upload-editor .croppr-overlay {
-	background-color: var(--color-main);
-	opacity: 0.6;
-}
-
-.field-image_upload .image-upload-editor .croppr-region, .field-multilingual_image_upload .image-upload-editor .croppr-region {
-	border: 1px dashed var(--color-accent-alt-light);
-	opacity: 0.6;
-}
-
-.field-image_upload .image-upload-editor .croppr-handleContainer .croppr-handle, .field-multilingual_image_upload .image-upload-editor .croppr-handleContainer .croppr-handle {
-	border-radius: 100%;
-	background-color: var(--color-accent-alt);
-	border: 0;
-	box-shadow: var(--shadow);
-}
-
-.field-image_upload.is-forced-ratio .image-upload-editor .croppr-handleContainer .croppr-handle, .field-multilingual_image_upload .tab-panel.is-forced-ratio .image-upload-editor .croppr-handleContainer .croppr-handle {
-	display: none;
-}
-
-.field-image_upload.is-forced-ratio .image-upload-editor .croppr-handleContainer .croppr-handle:nth-child(5), .field-multilingual_image_upload .tab-panel.is-forced-ratio .image-upload-editor .croppr-handleContainer .croppr-handle:nth-child(5) {
-	display: block;
+.field-image_upload img, .field-multilingual_image_upload img {
+	max-width: 100%;
+	max-height: 30vh;
+	object-fit: contain;
+	margin-right: auto;
 }
