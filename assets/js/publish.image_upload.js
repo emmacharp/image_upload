@@ -70,12 +70,7 @@
 	};
 
 	var addEditorDom = function (field, src) {
-		var ctn = field.find(sels.label);
-
-		// For multilingual support
-		if (!ctn.length && !!field.is('.tab-panel')) {
-			ctn = field;
-		}
+		var ctn = field;
 
 		var editor = $('<div />').attr({
 			class: sels.editor.replace('.', '') + sels.imageCtn.replace('.', ' ')
