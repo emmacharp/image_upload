@@ -16,7 +16,7 @@
 	$dictionary = array(
 
 		'Image Upload' =>
-		'Envoie d\'image',
+		'Envoi d\'image',
 
 		'Maximum width (px)' =>
 		'Largeur maximale (px)',
