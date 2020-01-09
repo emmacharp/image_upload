@@ -3,14 +3,6 @@
 	box-sizing: border-box;
 }
 
-.field-image_upload button, .field-multilingual_image_upload button {
-	float: right;
-}
-
-.field-image_upload button+*:not(button), .field-multilingual_image_upload button+*:not(button) {
-	clear: right;
-}
-
 .field-image_upload img, .field-multilingual_image_upload img {
 	max-width: 100%;
 	max-height: 30vh;
