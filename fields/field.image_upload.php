@@ -583,6 +583,8 @@
 			if (isset($data['file'])) {
 				$filename = $this->get('destination') . '/' . basename($data['file']);
 				$file = $this->getFilePath($data['file']);
+				$wrapper->setAttribute('data-image', 'yes');
+
 				if (file_exists($file) === false || !is_readable($file)) {
 					$flagWithError = __('The file uploaded is no longer available. Please check that it exists, and is readable.');
 				}

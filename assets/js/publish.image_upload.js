@@ -101,6 +101,9 @@
 			class: sels.input.replace('.', '')
 		}));
 
+		// Remove image
+		ctn.removeAttr('data-image');
+
 		// Remove the hidden image input
 		hiddenInput.remove();
 		
