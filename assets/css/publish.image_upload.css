@@ -19,11 +19,9 @@
 	object-fit: contain;
 }
 
-/* When js is not active, prevent interface flash --------*/
-html:not(.js-active) .field-image_upload button,
-html:not(.js-active) .field-multilingual_image_upload button {
-		/*display: none;*/
-		/*opacity: 0;*/
+.field-image_upload:not([data-image]) button,
+.field-multilingual_image_upload:not([data-image]) button {
+		display: none;
 }
 
 /* Occupy needed space for image to minimize interface jank --------*/
