@@ -2,7 +2,7 @@
 	max-width: 100%;
 	box-sizing: border-box;
 	width: calc(100% - var(--standard-inner-rhythm) * 2);
-	height: var(--dimension-tiny);
+	padding-top: 55%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,8 +15,14 @@
 
 .field-image_upload img, .field-multilingual_image_upload img {
 	max-width: 100%;
-	max-height: var(--dimension-tiny);
+	max-height: 100%;
 	object-fit: contain;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin: auto;
 }
 
 .field-image_upload:not([data-image]) button,
@@ -31,7 +37,7 @@
 	content: "";
 	display: block;
 	width: auto;
-	height: var(--dimension-tiny);
+	padding-top: 55%;
 	border: 1px dotted var(--color-main-lighter);
 	margin: var(--standard-inner-rhythm);
 	margin-top: calc(var(--compensate-for-inner-field-label) + var(--standard-inner-rhythm));
